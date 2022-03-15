@@ -187,6 +187,9 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
+.hr{
+    visibility: hidden;
+}
 .p2{
     margin-top: 5px;
     overflow: auto;

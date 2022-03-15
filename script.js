@@ -49,6 +49,7 @@ addtitle.addEventListener('submit',function(e){
     
         boxdiv.classList.add('box');
         p1p.classList.add('p1');
+        hrline.classList.add('hr');
         p2p.classList.add('p2');
         del.classList.add('trashbtn');
         delimg.classList.add('fa-solid');
