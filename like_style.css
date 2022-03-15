@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+.heart-btn{
+  position: fixed;
+  bottom: 7%;
+  right: 4%;
+  transform: translate(-50%,-50%);
+}
+@media screen and (max-width: 460px){
+  .heart-btn{
+    right: 7%;
+  }
+}
+.content{
+  display: flex;
+  cursor: pointer;
+}
+.content.heart-active{
+  border-color: #f9b9c4;
+}
+.heart{
+  position: absolute;
+  background: url("img/like_heart.png") no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 90px;
+  width: 90px;
+  top: 50%;
+  left: 1%;
+  transform: translate(-50%,-50%);
+  /* border: 1px solid blue; */
+}
+
+.text.heart-active{
+  color: #000;
+}
+.heart.heart-active{
+  animation: animate .8s steps(28) 1;
+  background-position: right;
+}
+@keyframes animate {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}

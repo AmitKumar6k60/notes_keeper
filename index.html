@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="like_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <img src="img/logo.png" alt="Logo" class="logoimg">
+            <h2 class="logotext">Notes</h2>
+        </div>
+        <div class="msg">
+            <p>Made with</p>
+            <img src="img/love.png" alt="love" class="loveimg">
+            <p>by Amit Kumar</p>
+        </div>
+    </div>
+    <div class="outerbox">
+        
+            <div class="typebox">
+                <form id="formbox">
+                    <input type="text" autocomplete="off" placeholder="Title" id="titlebox" class="titlebox">
+                    <textarea type="text" name="" placeholder="Add a note..." id="textarea" class="textarea"></textarea>
+                 <div class="btnholder">
+                     <div class="resetbtn"><i class="fa-solid fa-arrow-rotate-right"></i></div>
+                     <button class="addbtn">Add</button>
+                 </div>  
+                </form>
+            </div>
+        
+    </div>
+
+    <!-- Saved Note Area -->
+    <div class="bigbox">
+        <div class="box">
+            <p class="p1">Hello there!!</p>
+            <hr>
+            <p class="p2">This is a sample note. <br> Hope u like my work.</p>
+            <button class="trashbtn">
+                <i class="fa-solid fa-trash-can"></i>
+            </button>
+    
+        </div>
+    </div>
+
+
+    <!-- Social links -->
+
+    <div class="socialbox">
+        <div class="github"><a href="https://github.com/AmitKumar6k60" target="blank"><i class="fa-brands fa-github"></i></a></div>
+        <div class="linkedin"><a href="https://www.linkedin.com/in/amit-kumar-075755222/" target="blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+        <div class="fb"><a href="https://www.facebook.com/profile.php?id=100077505900327" target="blank"><i class="fa-brands fa-facebook"></i></a></div>
+        <div class="insta"><a href="https://www.instagram.com/amit_kumar_6k60/" target="blank"><i class="fa-brands fa-instagram"></i></a></div>
+    </div>
+
+    <!-- Like button  -->
+    <div class="heart-btn">
+        <div class="content">
+          <span class="heart"></span>
+        </div>
+      </div>
+
+    <div class="footer">
+        <p>Use Larger Screen!</p>
+    </div>
+<script src="script.js"></script>
+
+<!-- Script for like button -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script> 
+    $(document).ready(function(){
+      $('.content').click(function(){
+        $('.content').toggleClass("heart-active")
+        $('.text').toggleClass("heart-active")
+        $('.numb').toggleClass("heart-active")
+        $('.heart').toggleClass("heart-active")
+      });
+    });
+  </script>
+</body>
+
+</html>
